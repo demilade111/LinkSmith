@@ -4,21 +4,21 @@
 
 ---
 
-## **🚀 Overview**
+## **Overview**
 
 LinkSmith transforms long URLs into short, shareable links while tracking engagement metrics and optimizing redirect performance through intelligent caching.
 
 **When a user clicks a short link, LinkSmith:**
 
-1. ⚡ Instantly redirects them to the original destination (via Redis cache)
-2. 📊 Captures device, browser, IP, and region for analytics
-3. 🔄 Automatically caches frequently accessed links to minimize database load
+1. Instantly redirects them to the original destination (via Redis cache)
+2. Captures device, browser, IP, and region for analytics
+3. Automatically caches frequently accessed links to minimize database load
 
 Built entirely with modern backend technologies — **Node.js, Express, Prisma, PostgreSQL, and Redis** — and fully containerized with **Docker**.
 
 ---
 
-## **📂 Project Structure**
+## **Project Structure**
 
 ```
 linksmith-backend/
@@ -49,7 +49,7 @@ linksmith-backend/
 
 ---
 
-## **🧠 System Design**
+## **System Design**
 
 ### **Architecture Flow**
 
@@ -78,7 +78,7 @@ Background: Log analytics (device, IP, region, timestamp)
 
 ---
 
-## **💻 Tech Stack**
+## **Tech Stack**
 
 | Layer         | Technology               |
 | ------------- | ------------------------ |
@@ -93,7 +93,7 @@ Background: Log analytics (device, IP, region, timestamp)
 
 ---
 
-## **⚙️ Getting Started**
+## **Getting Started**
 
 ### **Prerequisites**
 
@@ -152,7 +152,7 @@ Access at `http://localhost:5555`
 
 ---
 
-## **🧩 API Documentation**
+## **API Documentation**
 
 Base URL: `http://localhost:3000/api/v1/links`
 
@@ -238,7 +238,7 @@ GET /api/v1/links/ISRf4v/analytics
 
 ---
 
-## **🧪 Testing**
+## **Testing**
 
 ### **Run the test suite**
 
@@ -248,10 +248,10 @@ GET /api/v1/links/ISRf4v/analytics
 
 This will test:
 
-- ✅ Link creation
-- ✅ Redirect functionality
-- ✅ Analytics tracking
-- ✅ Validation (invalid URLs)
+- Link creation
+- Redirect functionality
+- Analytics tracking
+- Validation (invalid URLs)
 
 ### **Monitor Redis cache**
 
@@ -282,7 +282,7 @@ curl http://localhost:3000/api/v1/links/ABC123/analytics
 
 ---
 
-## **📊 Performance & Scalability**
+## **Performance & Scalability**
 
 ### **Current Optimizations**
 
@@ -307,7 +307,7 @@ curl http://localhost:3000/api/v1/links/ABC123/analytics
 
 ---
 
-## **🗄️ Database Schema**
+## **Database Schema**
 
 ### **Link Model**
 
@@ -338,7 +338,7 @@ model Click {
 
 ---
 
-## **🔍 How It Works**
+## **How It Works**
 
 ### **Link Creation Flow**
 
@@ -367,7 +367,7 @@ model Click {
 
 ---
 
-## **🐳 Docker Commands**
+## **Docker Commands**
 
 ```bash
 # Start all services
@@ -394,7 +394,7 @@ docker exec linksmith_redis redis-cli
 
 ---
 
-## **🧰 Useful Commands**
+## **Useful Commands**
 
 ### **Database Management**
 
@@ -430,7 +430,7 @@ docker exec linksmith_redis redis-cli MONITOR
 
 ---
 
-## **🌍 Future Enhancements**
+## **Future Enhancements**
 
 - [ ] **Authentication** - User accounts & API keys
 - [ ] **Custom URLs** - Let users choose their short codes
@@ -445,32 +445,32 @@ docker exec linksmith_redis redis-cli MONITOR
 
 ---
 
-## **🧑‍💻 Author**
+## **Author**
 
-**Demi 
+**Demi (Zainab Azeez)**  
 Backend Developer & System Design Enthusiast  
 Building scalable systems, one project at a time.
 
 ---
 
-## **📜 License**
+## **License**
 
 MIT License — free for learning and personal use.
 
 ---
 
-## **🎯 Key Learnings**
+## **Key Learnings**
 
 This project demonstrates understanding of:
 
-✅ **REST API Design** - Clean, RESTful endpoint structure  
-✅ **Database Design** - Relational schema with foreign keys  
-✅ **Caching Strategy** - Redis for sub-millisecond performance  
-✅ **System Design** - Scalable architecture patterns  
-✅ **Docker** - Multi-container orchestration  
-✅ **ORM Usage** - Prisma for type-safe queries  
-✅ **Analytics** - Real-time click tracking  
-✅ **Production Practices** - Environment variables, error handling, logging
+- **REST API Design** - Clean, RESTful endpoint structure  
+- **Database Design** - Relational schema with foreign keys  
+- **Caching Strategy** - Redis for sub-millisecond performance  
+- **System Design** - Scalable architecture patterns  
+- **Docker** - Multi-container orchestration  
+- **ORM Usage** - Prisma for type-safe queries  
+- **Analytics** - Real-time click tracking  
+- **Production Practices** - Environment variables, error handling, logging
 
 ---
 
