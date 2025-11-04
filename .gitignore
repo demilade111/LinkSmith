@@ -1,0 +1,14 @@
+# Node
+node_modules
+.env
+.env.*
+dist
+build
+coverage
+
+# Docker
+postgres_data
+redis_data
+
+# Prisma
+prisma/dev.db
