@@ -54,6 +54,7 @@ docker-compose up --build
 ```
 
 This will start:
+
 - App on `http://localhost:3000`
 - PostgreSQL on `localhost:5432`
 - Redis on `localhost:6379`
@@ -89,6 +90,7 @@ curl -X POST http://localhost:3000/api/v1/links \
 ```
 
 **Response:**
+
 ```json
 {
   "id": "cmhk3v2bm0001ph0u6wtu46ph",
@@ -115,6 +117,7 @@ curl http://localhost:3000/api/v1/links/ISRf4v/analytics
 ```
 
 **Response:**
+
 ```json
 {
   "total": 127,
@@ -135,11 +138,6 @@ curl http://localhost:3000/api/v1/links/ISRf4v/analytics
 
 ## Author
 
-**Demi (Zainab Azeez)**  
-Backend Developer & System Design Enthusiast
+**Demi **  
+Backend Developer
 
----
-
-## License
-
-MIT License — free for learning and personal use.
